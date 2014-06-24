@@ -21,6 +21,10 @@
 		E53A6BA4194ED492009B2F60 /* diabeteshospitalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E53A6BA3194ED492009B2F60 /* diabeteshospitalTests.m */; };
 		E53A6BB0194EDF2F009B2F60 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E53A6BAE194EDF2F009B2F60 /* LoginViewController.m */; };
 		E53A6BB1194EDF2F009B2F60 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E53A6BAF194EDF2F009B2F60 /* LoginViewController.xib */; };
+		E55B6DDB1959CAE300CCB023 /* BloodGlucoseChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55B6DD91959CAE300CCB023 /* BloodGlucoseChartViewController.m */; };
+		E55B6DDC1959CAE300CCB023 /* BloodGlucoseChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E55B6DDA1959CAE300CCB023 /* BloodGlucoseChartViewController.xib */; };
+		E55B6DDE1959CBFB00CCB023 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E55B6DDD1959CBFB00CCB023 /* QuartzCore.framework */; };
+		E55B6DE01959CC5E00CCB023 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E55B6DDF1959CC5E00CCB023 /* UIKit.framework */; };
 		E5C3BDBE1950743D00C4098B /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5C3BDBD1950743D00C4098B /* area.plist */; };
 		E5C78D4F1953058C000C7A54 /* BloodGlucoseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C78D4E1953058C000C7A54 /* BloodGlucoseTableViewController.m */; };
 		E5C78D51195308C8000C7A54 /* exclamation.png in Resources */ = {isa = PBXBuildFile; fileRef = E5C78D50195308C8000C7A54 /* exclamation.png */; };
@@ -77,6 +81,11 @@
 		E53A6BAD194EDF2F009B2F60 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		E53A6BAE194EDF2F009B2F60 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		E53A6BAF194EDF2F009B2F60 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		E55B6DD81959CAE300CCB023 /* BloodGlucoseChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloodGlucoseChartViewController.h; sourceTree = "<group>"; };
+		E55B6DD91959CAE300CCB023 /* BloodGlucoseChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BloodGlucoseChartViewController.m; sourceTree = "<group>"; };
+		E55B6DDA1959CAE300CCB023 /* BloodGlucoseChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BloodGlucoseChartViewController.xib; sourceTree = "<group>"; };
+		E55B6DDD1959CBFB00CCB023 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E55B6DDF1959CC5E00CCB023 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E5C3BDBD1950743D00C4098B /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
 		E5C78D4D1953058C000C7A54 /* BloodGlucoseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloodGlucoseTableViewController.h; sourceTree = "<group>"; };
 		E5C78D4E1953058C000C7A54 /* BloodGlucoseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BloodGlucoseTableViewController.m; sourceTree = "<group>"; };
@@ -111,6 +120,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E55B6DE01959CC5E00CCB023 /* UIKit.framework in Frameworks */,
+				E55B6DDE1959CBFB00CCB023 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +162,8 @@
 		E53A6B7E194ED491009B2F60 = {
 			isa = PBXGroup;
 			children = (
+				E55B6DDF1959CC5E00CCB023 /* UIKit.framework */,
+				E55B6DDD1959CBFB00CCB023 /* QuartzCore.framework */,
 				E53A6B89194ED492009B2F60 /* diabeteshospital */,
 				E53A6BA0194ED492009B2F60 /* diabeteshospitalTests */,
 				E53A6B88194ED492009B2F60 /* Products */,
@@ -240,6 +253,9 @@
 				E5DCEF9419528774001AA707 /* InputResultViewController.xib */,
 				E5C78D4D1953058C000C7A54 /* BloodGlucoseTableViewController.h */,
 				E5C78D4E1953058C000C7A54 /* BloodGlucoseTableViewController.m */,
+				E55B6DD81959CAE300CCB023 /* BloodGlucoseChartViewController.h */,
+				E55B6DD91959CAE300CCB023 /* BloodGlucoseChartViewController.m */,
+				E55B6DDA1959CAE300CCB023 /* BloodGlucoseChartViewController.xib */,
 			);
 			name = BloodGlucose;
 			sourceTree = "<group>";
@@ -327,6 +343,7 @@
 				TargetAttributes = {
 					E53A6B86194ED491009B2F60 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 54JM7HMJ7N;
 					};
 					E53A6B9C194ED492009B2F60 = {
 						CreatedOnToolsVersion = 6.0;
@@ -373,6 +390,7 @@
 				E5FA79CC1951DA10003FDF14 /* 4.jpg in Resources */,
 				E5FA79CA1951DA10003FDF14 /* 1.jpg in Resources */,
 				E5FA79CB1951DA10003FDF14 /* 3.jpg in Resources */,
+				E55B6DDC1959CAE300CCB023 /* BloodGlucoseChartViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +415,7 @@
 				E53A6BB0194EDF2F009B2F60 /* LoginViewController.m in Sources */,
 				E53A6B93194ED492009B2F60 /* ViewController.m in Sources */,
 				E53A6B90194ED492009B2F60 /* AppDelegate.m in Sources */,
+				E55B6DDB1959CAE300CCB023 /* BloodGlucoseChartViewController.m in Sources */,
 				E5FA79C01951D771003FDF14 /* Doctor.m in Sources */,
 				E51A436119502527001EC7EB /* RegisterDetailsViewController.m in Sources */,
 				E51A43661950340F001EC7EB /* CusPickerView.m in Sources */,
@@ -520,6 +539,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = diabeteshospital/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -531,6 +551,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = diabeteshospital/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

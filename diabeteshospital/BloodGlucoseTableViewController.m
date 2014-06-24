@@ -8,6 +8,7 @@
 
 #import "BloodGlucoseTableViewController.h"
 #import "InputResultViewController.h"
+#import "BloodGlucoseChartViewController.h"
 
 @interface BloodGlucoseTableViewController ()<ACNavBarDrawerDelegate>
 {
@@ -128,6 +129,8 @@
             
         case 1:
         {
+            BloodGlucoseChartViewController *view = [[BloodGlucoseChartViewController alloc] initWithNibName:@"BloodGlucoseChartViewController" bundle:nil];
+            [self.navigationController pushViewController:view animated:YES];
             
         }
             break;
