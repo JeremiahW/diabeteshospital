@@ -2,11 +2,13 @@
 //  AppDelegate.m
 //  diabeteshospital
 //
-//  Created by Wang Jixiao on 6/24/14.
-//  Copyright (c) 2014 hospital. All rights reserved.
+//  Created by Wang Jixiao on 14-6-16.
+//  Copyright (c) 2014年 diabeteshospital. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "LoginViewController.h"
+
 
 @interface AppDelegate ()
             
@@ -14,10 +16,28 @@
 @end
 
 @implementation AppDelegate
-            
+
+@synthesize navController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] ;
+
+    //使用Storyboard初始化根界面
+     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+     self.window.rootViewController = [storyBoard instantiateInitialViewController];
+    
+    /*
+    LoginViewController *login = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+    login.title = @"青岛内分泌糖尿病医院";
+    
+    
+    self.navController = [[UINavigationController alloc] init];
+    self.window.rootViewController = self.navController;
+    [self.navController pushViewController:login animated:YES];
+    [self.window addSubview:self.navController.view];
+    [self.window makeKeyAndVisible];
+    */
+    
     return YES;
 }
 
