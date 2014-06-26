@@ -14,5 +14,6 @@
 @synthesize Title;
 @synthesize Description;
 @synthesize Photo;
-
+@synthesize  CellType;
+@synthesize IsAttached;
 @end

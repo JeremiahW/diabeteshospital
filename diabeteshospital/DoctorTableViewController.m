@@ -10,6 +10,7 @@
 #import "Doctor.h"
 #import "DoctorCell.h"
 #import "DoctorDetailsViewController.h"//;
+#import "CommandTableViewCell.h"
 
 @interface DoctorTableViewController ()
 
@@ -39,6 +40,8 @@
     doctor.Title = @"内分泌专家";
     doctor.Description = @"专治各种糖尿病病发症";
     doctor.Photo = @"1.jpg";
+    doctor.CellType = @"Main";
+    doctor.IsAttached = NO;
     [Doctors addObject:doctor];
     
     doctor = [[Doctor alloc] init];
@@ -46,6 +49,8 @@
     doctor.Title = @"内分泌足专家";
     doctor.Description = @"专治各种糖尿病病发症";
     doctor.Photo = @"2.jpg";
+    doctor.CellType = @"Main";
+    doctor.IsAttached = NO;
     [Doctors addObject:doctor];
     
     doctor = [[Doctor alloc] init];
@@ -53,6 +58,8 @@
     doctor.Title = @"内分泌足专家";
     doctor.Description = @"专治各种糖尿病病发症";
     doctor.Photo =@"3.jpg";
+    doctor.CellType = @"Main";
+    doctor.IsAttached = NO;
     [Doctors addObject:doctor];
     
     doctor = [[Doctor alloc] init];
@@ -60,6 +67,8 @@
     doctor.Title = @"眼病专家";
     doctor.Description = @"专治各种糖尿病病发症";
     doctor.Photo =@"4.jpg";
+    doctor.CellType = @"Main";
+    doctor.IsAttached = NO;
     [Doctors addObject:doctor];
     
     doctor = [[Doctor alloc] init];
@@ -67,6 +76,8 @@
     doctor.Title = @"什么都会专家";
     doctor.Description = @"专治各种糖尿病病发症";
     doctor.Photo =@"5.jpg";
+    doctor.CellType = @"Main";
+    doctor.IsAttached = NO;
     [Doctors addObject:doctor];
 }
 
@@ -94,24 +105,24 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    DoctorCell *cell = (DoctorCell *)[tableView dequeueReusableCellWithIdentifier:@"DoctorCell" forIndexPath:indexPath];
-    
     Doctor *doctor = (self.Doctors)[indexPath.row];
-    cell.LblName.text = doctor.Name;
-    cell.LblTitle.text = doctor.Title;
-    cell.LblDesc.text = doctor.Description;
-    cell.ImagePhoto.image= [UIImage imageNamed:doctor.Photo];
-    cell.ImagePhoto.frame = CGRectMake(0, 0, 80, 80);
-   // cell.ImagePhoto.image = [UIImage imageNamed:doctor.Photo];
-    cell.ImagePhoto.contentMode = UIViewContentModeScaleAspectFit;
     
-    
-   // CGRectMake(0, 0, 60, 60);
-    return cell;
+        DoctorCell *cell = (DoctorCell *)[tableView dequeueReusableCellWithIdentifier:@"DoctorCell" forIndexPath:indexPath];
+        cell.LblName.text = doctor.Name;
+        cell.LblTitle.text = doctor.Title;
+        cell.LblDesc.text = doctor.Description;
+        cell.ImagePhoto.image= [UIImage imageNamed:doctor.Photo];
+        cell.ImagePhoto.frame = CGRectMake(0, 0, 80, 80);
+        // cell.ImagePhoto.image = [UIImage imageNamed:doctor.Photo];
+        cell.ImagePhoto.contentMode = UIViewContentModeScaleAspectFit;
+        return cell;
+ 
+ 
 }
 -(void)tableView: (UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath
 {
-    
+       
+
     
     
 }
@@ -119,7 +130,7 @@
  
 -(void)tableView:(UITableView *) tableView accessoryButtonTappedForRowWithIndexPath: (NSIndexPath *) indexPath
 {
- 
+  
  
 }
 /*

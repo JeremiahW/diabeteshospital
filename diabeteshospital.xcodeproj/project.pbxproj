@@ -24,6 +24,11 @@
 		E55B6DDB1959CAE300CCB023 /* BloodGlucoseChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55B6DD91959CAE300CCB023 /* BloodGlucoseChartViewController.m */; };
 		E55B6DDC1959CAE300CCB023 /* BloodGlucoseChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E55B6DDA1959CAE300CCB023 /* BloodGlucoseChartViewController.xib */; };
 		E55B6DE01959CC5E00CCB023 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E55B6DDF1959CC5E00CCB023 /* UIKit.framework */; };
+		E5803E31195C5242000B6130 /* CommandTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5803E2F195C5242000B6130 /* CommandTableViewCell.m */; };
+		E5803E32195C5242000B6130 /* CommandTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5803E30195C5242000B6130 /* CommandTableViewCell.xib */; };
+		E5803E36195C542B000B6130 /* ReportResultTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5803E35195C542B000B6130 /* ReportResultTableViewController.m */; };
+		E5803E3D195C6628000B6130 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5803E3B195C6628000B6130 /* MainTableViewCell.m */; };
+		E5803E3E195C6628000B6130 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5803E3C195C6628000B6130 /* MainTableViewCell.xib */; };
 		E5B153EA195AA57200FB0375 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B153E9195AA57200FB0375 /* CoreGraphics.framework */; };
 		E5B9CB6F195BF34A00F9604C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B9CB6E195BF34A00F9604C /* Foundation.framework */; };
 		E5B9CBD3195C024D00F9604C /* BEMAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B9CBCC195C024D00F9604C /* BEMAnimations.m */; };
@@ -91,6 +96,14 @@
 		E55B6DDA1959CAE300CCB023 /* BloodGlucoseChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BloodGlucoseChartViewController.xib; sourceTree = "<group>"; };
 		E55B6DDD1959CBFB00CCB023 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E55B6DDF1959CC5E00CCB023 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E5803E2E195C5242000B6130 /* CommandTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandTableViewCell.h; sourceTree = "<group>"; };
+		E5803E2F195C5242000B6130 /* CommandTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandTableViewCell.m; sourceTree = "<group>"; };
+		E5803E30195C5242000B6130 /* CommandTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommandTableViewCell.xib; sourceTree = "<group>"; };
+		E5803E34195C542B000B6130 /* ReportResultTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportResultTableViewController.h; sourceTree = "<group>"; };
+		E5803E35195C542B000B6130 /* ReportResultTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportResultTableViewController.m; sourceTree = "<group>"; };
+		E5803E3A195C6628000B6130 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
+		E5803E3B195C6628000B6130 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
+		E5803E3C195C6628000B6130 /* MainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		E5B153E9195AA57200FB0375 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E5B9CB6E195BF34A00F9604C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E5B9CBCB195C024D00F9604C /* BEMAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAnimations.h; sourceTree = "<group>"; };
@@ -197,6 +210,7 @@
 		E53A6B89194ED492009B2F60 /* diabeteshospital */ = {
 			isa = PBXGroup;
 			children = (
+				E5803E33195C5403000B6130 /* ResultReport */,
 				E5DCEF971952BC71001AA707 /* CustomControl */,
 				E5DCEF8E19528444001AA707 /* BloodGlucose */,
 				E5FA79C41951D922003FDF14 /* Images */,
@@ -256,6 +270,21 @@
 				E51A436019502527001EC7EB /* RegisterDetailsViewController.xib */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		E5803E33195C5403000B6130 /* ResultReport */ = {
+			isa = PBXGroup;
+			children = (
+				E5803E2E195C5242000B6130 /* CommandTableViewCell.h */,
+				E5803E2F195C5242000B6130 /* CommandTableViewCell.m */,
+				E5803E30195C5242000B6130 /* CommandTableViewCell.xib */,
+				E5803E34195C542B000B6130 /* ReportResultTableViewController.h */,
+				E5803E35195C542B000B6130 /* ReportResultTableViewController.m */,
+				E5803E3A195C6628000B6130 /* MainTableViewCell.h */,
+				E5803E3B195C6628000B6130 /* MainTableViewCell.m */,
+				E5803E3C195C6628000B6130 /* MainTableViewCell.xib */,
+			);
+			name = ResultReport;
 			sourceTree = "<group>";
 		};
 		E5B15426195AABE800FB0375 /* Framework */ = {
@@ -417,11 +446,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5803E3E195C6628000B6130 /* MainTableViewCell.xib in Resources */,
 				E5FA79CE1951DA10003FDF14 /* 2.jpg in Resources */,
 				E53A6B96194ED492009B2F60 /* Main.storyboard in Resources */,
 				E5DCEF9D1952BECB001AA707 /* nav_plus.png in Resources */,
 				E5FA79CD1951DA10003FDF14 /* 5.jpg in Resources */,
 				E53A6B98194ED492009B2F60 /* Images.xcassets in Resources */,
+				E5803E32195C5242000B6130 /* CommandTableViewCell.xib in Resources */,
 				E5C78D51195308C8000C7A54 /* exclamation.png in Resources */,
 				E5DCEF9619528774001AA707 /* InputResultViewController.xib in Resources */,
 				E53A6BB1194EDF2F009B2F60 /* LoginViewController.xib in Resources */,
@@ -456,6 +487,7 @@
 				E5290DFE194EE4AC00B7CF33 /* RegisterViewController.m in Sources */,
 				E5DCEF91195284EB001AA707 /* BloodGlucoseViewController.m in Sources */,
 				E53A6BB0194EDF2F009B2F60 /* LoginViewController.m in Sources */,
+				E5803E3D195C6628000B6130 /* MainTableViewCell.m in Sources */,
 				E53A6B93194ED492009B2F60 /* ViewController.m in Sources */,
 				E53A6B90194ED492009B2F60 /* AppDelegate.m in Sources */,
 				E55B6DDB1959CAE300CCB023 /* BloodGlucoseChartViewController.m in Sources */,
@@ -467,8 +499,10 @@
 				E5B9CBD6195C024D00F9604C /* BEMSimpleLineGraphView.m in Sources */,
 				E5B9CBD3195C024D00F9604C /* BEMAnimations.m in Sources */,
 				E5DCEF9519528774001AA707 /* InputResultViewController.m in Sources */,
+				E5803E31195C5242000B6130 /* CommandTableViewCell.m in Sources */,
 				E53A6B8D194ED492009B2F60 /* main.m in Sources */,
 				E5DCEF9A1952BC85001AA707 /* ACNavBarDrawer.m in Sources */,
+				E5803E36195C542B000B6130 /* ReportResultTableViewController.m in Sources */,
 				E5C78D4F1953058C000C7A54 /* BloodGlucoseTableViewController.m in Sources */,
 				E5B9CBD4195C024D00F9604C /* BEMCircle.m in Sources */,
 			);

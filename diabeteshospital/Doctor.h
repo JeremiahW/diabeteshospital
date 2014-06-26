@@ -16,4 +16,8 @@
 @property(nonatomic, strong) NSString *Description;
 @property(nonatomic, strong) NSString *Photo;
 
+
+@property(nonatomic, strong) NSString *CellType;
+@property(nonatomic) BOOL IsAttached;
+
 @end
